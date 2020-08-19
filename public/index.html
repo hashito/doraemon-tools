@@ -1,0 +1,104 @@
+<html>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <title>ランダムでドラえもん道具を引き当てよう</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175840141-1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/locale/ja.js"></script>
+    <meta property="og:title" content="ランダムでドラえもん道具を引き当てよう" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://doraemon-tools.hashito.biz/index.html" />
+    <meta property="og:image" content="https://doraemon-tools.hashito.biz/out.png" />
+    <meta property="og:site_name" content="Tnbun" />
+    <meta property="og:description" content="ランダムでドラえもん道具を引き当てよう" />
+    <meta name="twitter:description" content="ランダムでドラえもん道具を引き当てよう" />
+    <meta name="twitter:image" content="https://doraemon-tools.hashito.biz/out.png" />
+    <meta name="twitter:title" content="ランダムでドラえもん道具を引き当てよう" />
+    <meta name="twitter:site" content="@hashitoz" />
+    <meta name="twitter:card" content="summary_large_image" />
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-175840141-1');
+    </script>
+  </head>
+  <style>
+footer {
+  margin-top: auto;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+}
+  </style>
+  <body>
+    <!--main-->
+    <div class="container main">
+      <div class="notification">
+        <section class="hero is-info">
+          <div class="hero-body">
+            <div class="columns">
+              <div class="column">
+                <div class="container">
+                  <h1 class="title">
+                    ランダムでドラえもんの道具が出てくる
+                  </h1>
+                  <h2 class="subtitle">
+                    ドラえもん Tools
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <br>
+
+        <div class="tile">
+
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child box">
+              ログイン不要<br>
+              <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="ランダムにドラえもんの道具を引き当てるサービス" data-url="https://doraemon-tools.hashito.biz/" data-lang="ja" data-show-count="false">Tweet</a>
+              <div class="line-it-button" data-lang="ja" data-type="share-a" data-ver="3" data-url="https://doraemon-tools.hashito.biz/" data-color="default" data-size="large" data-count="false" style="display: none;"></div>
+              <div class="fb-share-button" data-href="https://doraemon-tools.hashito.biz/" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdoraemon-tools.hashito.biz%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">シェア</a></div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="tile">
+
+            <div class="tile is-parent is-vertical">
+              <div class="tile is-child box"  id="app">
+                
+                <button v-on:click="search" class="is-size-3 button is-primary" >ポケットを探ってみる</button>
+                <div v-if="tool" class="has-text-centered	">
+                  <div class="is-size-1">
+                    あなたは<br>「{{tool}}」<br>を引き当てました！
+                  </div>
+                  <button v-on:click="popUpTweetWindow" class="button is-link">twitterでみんなに共有する</button>
+                </div>                
+              </div>
+            </div>
+            </div>
+          </div>
+      </div>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>© 2020 <strong>Doraemon-tools</strong> by <a href="https://twitter.com/HashitoZ">hashito</a></p>
+      </div>
+    </footer>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+    <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v8.0" nonce="NMdaw4Aa"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </body>
+</html>
